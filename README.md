@@ -35,7 +35,7 @@
 	
 	6.部署项目(可以直接放在tomcat的webapp下面运行)<br/>
 	&nbsp;&nbsp;&nbsp;&nbsp;配置tomcat的conf/service.xml<br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;在HOST标签内添加Context标签,设置docBase="/*/dubbo-admin" <br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;启动tomcat<br/><br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;在HOST标签内添加Context标签,设置docBase="/*/dubbo-admin" path=""<br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;启动tomcat,http://ip:8080/<br/><br/>
 </h4>
 <h3>##====>通过以上步骤,dubbo管理后台与注册中心zookeeper就配置完成<====##</h3>
