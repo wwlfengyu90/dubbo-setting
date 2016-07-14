@@ -30,24 +30,20 @@
     	<li>在工程dubbo-admin/target/下会生成dubbo-admin-?.war </li>
     	<li>解压war:将war上传到服务器,先mkdir dubbo-admin,然后在目录里解压war(jar xvf dubbo-admin-?.war)</li>
     	<li>修改dubbo-admin的WEB-INF下的dubbo.properties文件</li><br/>
-    	<ul>
-    	   <li>dubbo.registry.address=zookeeper://192.168.20.129:2181</li>
-    	   <li>dubbo.registry.address=zookeeper://192.168.20.129:2181</li>
-    	<ul>
+    	<ol>dubbo.registry.address=zookeeper://192.168.20.129:2181</ol>
+    	<ol>dubbo.admin.root.password=root</ol>
+    	<ol>dubbo.admin.guest.password=guest</ol>
+    	
+    	<li>====>具体可以参照,github工程地址内的详细介绍<====</li>
     </ul>
-	&nbsp;&nbsp;&nbsp;&nbsp;将工程通过maven指令mvn install -DskipTests=true,进行打包 <br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;在工程dubbo-admin/target/下会生成dubbo-admin-?.war <br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;解压war:将war上传到服务器,先mkdir dubbo-admin,然后在目录里解压war(jar xvf dubbo-admin-?.war)<br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;修改dubbo-admin的WEB-INF下的dubbo.properties文件<br/><br/>
-	
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dubbo.registry.address=zookeeper://192.168.20.129:2181<br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dubbo.admin.root.password=root<br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dubbo.admin.guest.password=guest<br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;====>具体可以参照,github工程地址内的详细介绍<====<br/><br/>
-	
-	6.部署项目(可以直接放在tomcat的webapp下面运行)<br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;配置tomcat的conf/service.xml<br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;在HOST标签内添加Context标签,设置docBase="/*/dubbo-admin" path=""<br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;启动tomcat,http://ip:8080/<br/><br/>
+    </br>
+   6.部署项目(可以直接放在tomcat的webapp下面运行)<br/>
+  <ul>
+  	<li>配置tomcat的conf/service.xml</li>
+  	<li>在HOST标签内添加Context标签,设置docBase="/*/dubbo-admin" path=""</li>
+  	<li>启动tomcat,http://ip:8080/</li>
+  </ul>
+
 </h4>
+<br/>
 <h3>##====>通过以上步骤,dubbo管理后台与注册中心zookeeper就配置完成<====##</h3>
