@@ -5,14 +5,22 @@
   
   2.配置jdk：<br/>
   &nbsp;&nbsp;##编辑文件:vi /etc/profile,在文件最末,加入如下配置：<br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;export JAVA_HOME=/opt/jdk1.8.0_92 <br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;export PATH=$JAVA_HOME/bin:$PATH  <br/>
-	&nbsp;&nbsp;&nbsp;&nbsp;export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar  <br/><br/>
-	
-	3.install tomcat <br/>
-	&nbsp;&nbsp;##下载地址:http://tomcat.apache.org/<br/><br/>
+  &nbsp;&nbsp;
+  <ul>
+	&nbsp;&nbsp;&nbsp;&nbsp;<li>export JAVA_HOME=/opt/jdk1.8.0_92</li>
+	&nbsp;&nbsp;&nbsp;&nbsp;<li>export PATH=$JAVA_HOME/bin:$PATH</li>
+	&nbsp;&nbsp;&nbsp;&nbsp;<li>export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</li>
+  <ul><br/>
+  3.install tomcat <br/>
+  &nbsp;&nbsp;##下载地址:http://tomcat.apache.org/<br/><br/>
 	
 	4.install zookeeper消息中心(依赖jdk)<br/>
+	<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	</ul>
 	&nbsp;&nbsp;##下载与安装处理(默认端口1281)：<br/><br/>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下载地址: http://www.apache.org/dist//zookeeper/zookeeper-3.4.8/zookeeper-3.4.8.tar.gz<br/>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;解压: tar zxvf zookeeper-3.4.8.tar.gz <br/>
@@ -27,7 +35,7 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;在工程dubbo-admin/target/下会生成dubbo-admin-?.war <br/>
 	&nbsp;&nbsp;&nbsp;&nbsp;解压war:将war上传到服务器,先mkdir dubbo-admin,然后在目录里解压war(jar xvf dubbo-admin-?.war)<br/>
 	&nbsp;&nbsp;&nbsp;&nbsp;修改dubbo-admin的WEB-INF下的dubbo.properties文件<br/><br/>
-
+	
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dubbo.registry.address=zookeeper://192.168.20.129:2181<br/>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dubbo.admin.root.password=root<br/>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dubbo.admin.guest.password=guest<br/>
