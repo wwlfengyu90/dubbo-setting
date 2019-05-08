@@ -47,6 +47,8 @@
 <br/>
 <h3>##====>通过以上步骤,dubbo管理后台与注册中心zookeeper就配置完成<====##</h3>
 	
-... json
-{"a":111,"b":666}
-...
+``` json
+{
+  "hello": "world" // I want my comments!
+}
+```
