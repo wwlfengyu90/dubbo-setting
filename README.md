@@ -33,8 +33,7 @@
     	<ol>dubbo.registry.address=zookeeper://192.168.20.129:2181</ol>
     	<ol>dubbo.admin.root.password=root</ol>
     	<ol>dubbo.admin.guest.password=guest</ol>
-    	
-    	<li>====>具体可以参照,github工程地址内的详细介绍<====</li>
+	<li>====>具体可以参照,github工程地址内的详细介绍<====</li>
     </ul>
     </br>
    6.部署项目(可以直接放在tomcat的webapp下面运行)<br/>
